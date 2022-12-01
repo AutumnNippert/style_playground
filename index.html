@@ -7,34 +7,102 @@
 </head>
 
 <body>
-    <style contenteditable style="display: block;
-    white-space: pre;">* {transition: all 0.3s ease-in-out;}
-html {
-    background-color: #333;
-    color: #ccc;
-    font-family: sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-}
+    <div class="flex-container">
+        <div class="flex-child">
+            <h1>Style</h1>
+            <style contenteditable style="display: block;
+    white-space: pre;">
+    * {
+                    transition: all 0.3s ease-in-out;
+                }
 
-/*This is what you're editing*/
-style {
-    border: #ccc;
-    border-style: solid;
-    border-radius: 200px;
-    padding: 800px;
-    margin: 10px;
-}
+                html {
+                    box-sizing: border-box;
+                    background-color: #24133c;
+                    color: #fff;
+                    font-family: calibri;
+                    font-size: 20px;
+                    font-weight: 600;
+                }
 
-div {
-    border: #ccc;
-    border-style: solid;
-    border-radius: 200px;
-    padding: 10px;
-    margin: 10px;
-}
-</style>
-<div contenteditable>A div</div>
+                div {
+                    box-sizing: border-box;
+                    background-color: #222;
+                    padding: 10px;
+                    margin: 10px;
+                }
+
+                h1 {
+                    box-sizing: border-box;
+                    text-align: center;
+                    width: 100%;
+                    color: #4dddf2;
+                    border-bottom: 2px solid #ccc;
+                    background-color: #381f5c;
+                    padding: 20px;
+                }
+
+                h2 {
+                    box-sizing: border-box;
+                    text-align: center;
+                    width: 100%;
+                    color: #4dddf2;
+                    border-bottom: 2px solid #ccc;
+                    background-color: #381f5c;
+                    padding: 20px;
+                }
+
+                table {
+                    box-sizing: border-box;
+                    width: 100%;
+                    padding: 10px;
+                    margin: 10px;
+                    border: 2px solid #ccc;
+                    border-collapse: collapse;
+                    /* q: how do I give a table dividers in css? */
+                    /* a: https://www.w3schools.com/css/css_table.asp */
+                }
+
+                th,
+                td {
+                    border: 2px solid #ccc;
+                    padding: 10px;
+                    margin: 10px;
+                    text-align: left;
+                }
+
+                .flex-container {
+                    display: flex;
+                }
+
+                .flex-child {
+                    flex: 1;
+                }
+
+                .flex-child:first-child {
+                    margin-right: 20px;
+                }
+            </style>
+        </div>
+        <div class="flex-child">
+            <h1>Div</h1>
+            <table>
+                <h2>Table</h2>
+                <tr>
+                    <th>Column 1</th>
+                    <th>Column 2</th>
+                </tr>
+                <tr>
+                    <td>Row 1</td>
+                    <td>Row 2</td>
+                </tr>
+                <tr>
+                    <td>Row 3</td>
+                    <td>Row 4</td>
+                </tr>
+            </table>
+        </div>
+    </div>
 </body>
 
 </html>
